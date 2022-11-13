@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color:#F9F9F9;
+    margin: 0px;
+}
+#ME{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+}
+#ME:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+#BG{
+    position:absolute;
+    top: 60px;
+    left: 0px;
+    width:100%;
+    z-index: -1000;
+}
+#chN{
+    color: white;
+    font-family: "Noto Serif TC",serif;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+}
+#SelfIntro{
+    color: white;
+    font-family: "Noto Serif TC",serif;
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 80px;
+}
+#enN{
+    font-family: "Noto Serif TC",serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -45px;
+}
+nav{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.select{
+    color:#CDF0EA;
+    font-family:"Noto Serif TC",serif;
+    font-size: 21px;
+    font-weight: bolder;
+    margin: 15px;
+    text-decoration: none;
+}
+.select:visited{
+    text-decoration: none;
+}
+.select:hover{
+    color:#7FBCD2;
+    font-size: 22px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.content{
+    background-color: #CEE5D0;
+    border-radius: 20px; 
+    padding: 50px;
+    width: 1000px;
+    position: absolute;
+    margin-top: 100px;
+    height: 400px;
+    box-shadow: 10px 10px 10px #94B49F ;
+    opacity: 0.5;
+}
+.content:hover {
+    opacity: 1.0;
+}
+/* SKILLS*/
+#skill{
+    margin-top: -100px;
+    display: flex;
+    height: 600px;
+  }
+  .word{
+    font-family: "Noto Serif TC",serif;
+    z-index: 10;
+    color:white;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  #skill > .skill-contnet > h1{
+    margin-right: 1100px;
+    margin-top: 50px;
+  } 
+    /*skill bar*/
+    .container{
+      margin: -25px -110px 0 90px;
+    }
+    @keyframes load{
+      from {
+        width: 0%
+      }
+    }
+    @-webkit-keyframes load{ /*chrome safari*/
+      from {
+        width: 0%
+      }
+    }
+    @-moz-keyframes load{ /*firefox*/
+      from {
+        width: 0%
+      }
+    }
+    @-o-keyframes load{ /*opera*/
+      from {
+        width: 0%
+      }
+    }
+    .bar{
+      background-color: #94B49F;
+      font-family: "Noto Serif TC",serif;
+      padding: 2px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      margin-left: -80px;
+      margin-right: 500px;
+      font-size: 20px;
+      color:#94B49F;
+      font-weight: bold;
+    }
+    .bar::before{
+      content:  attr(data-skill);
+      background-color: #ECB390;
+      display: inline-block;
+      padding: 5px 0 5px 10px;
+      border-radius: inherit;
+      animation: load 2s 0s;
+      -webkit-animation: load 2s 0s;
+      -moz-animation: load 2s 0s;
+      -o-animation: load 2s 0s;
+    }
+    /*skill bar size*/
+    .bar.bar_yl::before{
+      background-color: #FCF8E8;
+    }
+    .bar.bar_ol::before{
+      background-color: #ECB390;
+    }
+    .bar.WORD::before{
+      width: calc(95% - 0px);
+    }
+    .bar.PTT::before{
+      width: calc(95% - 0px);
+    }
+    .bar.PYTHON::before{
+      width: calc(50% - 0px);
+    }
+    .bar.jv::before{
+      width: calc(65% - 0px);
+    }
+/*skill end*/
+.set{
+    background-color: #CCD6A6;
+    border-radius: 20px; 
+    padding: 50px;
+    width: 1000px;
+    position: absolute;
+    margin-top: 520px;
+    height: 2200px;
+    opacity: 0.5;
+    box-shadow: 10px 10px 10px #94B49F ;
+}
+.set:hover {
+    opacity: 1.0;
+}
+.words{
+    font-family: "Noto Serif TC",serif;
+    z-index: 10;
+    color:white;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 0px;
+}
+/*EXPERIENCE*/
+.accordion{
+    padding: 50px;
+    height: 20px;
+    width: 900px;
+    border:none;
+    background-color: #F6F6C9;
+    font-family: "Noto Serif TC",serif;
+    font-size: 30px;
+    text-align:center;
+    margin:0%;
+    transition: 0.4s;
+    color:#94B49F;
+}
+.active, .accordion:hover {
+	background-color: #FFE9A0;
+    font-size: 40px;
+    color:#367E18;
+}
+.panel{
+    width: 900px;
+    margin: 50px,auto;
+    overflow: hidden;
+	background-color: white;
+}
+#photo1:hover,
+#photo2:hover,
+#photo3:hover,
+#photo4:hover,
+#photo5:hover {
+  transform: scale(1.5);
+  transform: rotate(2deg);
+}
+.bdcard{
+    width: 300px;
+    float:left;
+    padding: 20px;
+  }
+  .bdcard img{
+    display: block;
+    width: 330px;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .bdtext{
+    float: right;
+    width: 430px;
+    padding: 20px 20px 0px 0px;
+    font-family: "Noto Serif TC",serif;
+    font-size: 20px;
+  }
+.button2{
+    padding: 10px;
+    height: 40px;
+    width: 130px;
+    border:none;
+    background-color: #ECB390;
+    border-radius: 20px; 
+    font-family: "Noto Serif TC",serif;
+    margin-left: 400px;
+    margin-right: 200px;
+}
+.title{
+    font-family: "Noto Serif TC",serif;
+    font-size: 40px;
+}
+.text1{
+    font-family: "Noto Serif TC",serif;
+    font-size: 10px;
+    float:right;
+}
+/*EXPERIENCE END*/
+#side{
+    z-index: 0;
+    background: #FCF8E8;
+    height: 240px;
+    width: 80px;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    border-radius:40px 10px;
+}
+#fb{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+#ig{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 40px;
+    left: 15px;
+}
+#flickr{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 60px;
+    left: 15px;
+}
+footer{
+    background: #94B49F;
+    width: 100%;
+    height: 100px;
+    margin-top: 2700px;
+    position: relative;
+}
+#copyright{
+    font-family: "Noto Serif TC",serif;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 32px;
+}
